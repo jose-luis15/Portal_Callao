@@ -1,513 +1,523 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.container__all{
-    position: relative;
-    right: 0;
-    transition: all 300ms;
+.container__all {
+  position: relative;
+  right: 0;
+  transition: all 300ms;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    font-family: 'Poppins', sans-serif;
-    /* background: var(--color-esqueleto); */
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    transition: all 300ms; /* para que las animaciones de cambio no sean tan bruscas */
+header {
+  width: 100%;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  /* background: var(--color-esqueleto); */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 300ms; /* para que las animaciones de cambio no sean tan bruscas */
 }
 
-.move_content{
-    right: 180px;
+.move_content {
+  right: 180px;
 }
 
-.container__header{
-    max-width: 1200px;
-    height: 100%; /* Alto max es de 100px */
-    display: flex;
-    justify-content: space-between; /* Envía los elementos del menu y logo a partes separadas pero centradas en relación al total */
-    margin: auto;
-    margin: auto; /* mantiene centrado a los elementos */
-    padding: 0px 20px;
+.container__header {
+  max-width: 1200px;
+  height: 100%; /* Alto max es de 100px */
+  display: flex;
+  justify-content: space-between; /* Envía los elementos del menu y logo a partes separadas pero centradas en relación al total */
+  margin: auto;
+  margin: auto; /* mantiene centrado a los elementos */
+  padding: 0px 20px;
 }
 
-video{
-    position: absolute;
-    align-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+video {
+  position: absolute;
+  align-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .capa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1c;
-    opacity: 0.5;
-    mix-blend-mode: overlay; /* Oscurece o aclara la capa en funciín del tono del video del fondo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1c;
+  opacity: 0.5;
+  mix-blend-mode: overlay; /* Oscurece o aclara la capa en funciín del tono del video del fondo */
 }
 
 .years {
-    position: fixed;
-    right: 10px;
-    bottom: 150px;
-    z-index: 99999;
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  z-index: 99999;
 }
 
-header .logo_header{
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+header .logo_header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo_header img{
-    width: 150px;
+.logo_header img {
+  width: 150px;
 }
 
-.container__nav{
-    position: relative;
-    height: 100%;
+.container__nav {
+  position: relative;
+  height: 100%;
 }
 
-nav{
-    height: 100%;
+nav {
+  height: 100%;
 }
 
-nav ul{
-    height: 100%;
-    display: flex;
-    justify-content: center; /* Para posicionar los elementos horizontalmente */
-    align-items: center;
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Para posicionar los elementos horizontalmente */
+  align-items: center;
 }
 
-nav ul li{
-    margin: 0px 20px;
-    list-style: none;
+nav ul li {
+  margin: 0px 20px;
+  list-style: none;
 }
 
-nav ul li a{
-    color: #575756;
-    font-size: 14px;
-    font-weight: 600;
+nav ul li a {
+  color: #575756;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.select{
-    background-color: #3850A0;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 20px;
-    font-weight: 500;
+.select {
+  background-color: #3850a0;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
 }
 
 /* Creamos un estilo imaginario para poder animas la barra de menu al moder el scroll */
-.nav_mod{
-    height: 70px;
-    box-shadow: 1px 1px 10px 0px #00000010;
-    background: white;
+.nav_mod {
+  height: 70px;
+  box-shadow: 1px 1px 10px 0px #00000010;
+  background: white;
 }
 
-.btn__menu{
-    width: 50px;
-    height:  50px;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background 300ms;
-    display: none;
+.btn__menu {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 300ms;
+  display: none;
 }
 
-.btn__menu:hover{
-    background: #f5f5f5;
+.btn__menu:hover {
+  background: #f5f5f5;
 }
 
 /* COVER - PORTADA */
-.cover{
-    width: 100%;
-    padding-bottom: 60px;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 100px;
-    position: relative;
+.cover {
+  width: 100%;
+  padding-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  position: relative;
 }
 
-.container__cover{
-    width: 100%;
-    height: 550px;
-    margin: auto;
-    padding: 20px; 
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    /* Ponemos imagen de fondo */
-    background-size: cover;
-    background-position: bottom;
+.container__cover {
+  width: 100%;
+  height: 550px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* Ponemos imagen de fondo */
+  background-size: cover;
+  background-position: bottom;
 }
 
-.cover .container__info{
-    max-width: 400px;
-    margin-top: 40px;
-    z-index: 2; /* para que simepre la imagen quede a nivel del texto asi se redusca el tamaño del esoacio */
-    position: relative;
-    margin-left: 12%;
+.cover .container__info {
+  max-width: 400px;
+  margin-top: 40px;
+  z-index: 2; /* para que simepre la imagen quede a nivel del texto asi se redusca el tamaño del esoacio */
+  position: relative;
+  margin-left: 12%;
 }
 
-.cover h1{
-    max-width: 400px;
-    font-size: 60px;
-    font-weight: 900;
-    color: #ffffff;
+.cover h1 {
+  max-width: 400px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
-.cover h2{
-    font-size: 45px;
-    font-weight: 800;
-    color: #EE9626;
-    margin-top: -30px;
+.cover h2 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #ee9626;
+  margin-top: -30px;
 }
 
-.cover p{
-    margin-top: 10px;
-    color: #ffffff;
+.cover p {
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-.cover input[type = "button"]{
-    padding: 10px 40px;
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    color: white;
-    background: #7a7a7a;
-    border-radius: 20px;
-    box-shadow: 1px 1px 30px -5px #20202049;
-    cursor: pointer;
-    transition: box-shadow 500ms; /* Para que la trnsicición no se tan brusca, si queremos para todo le pondremos all */
+.cover input[type="button"] {
+  padding: 10px 40px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background: #7a7a7a;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #20202049;
+  cursor: pointer;
+  transition: box-shadow 500ms; /* Para que la trnsicición no se tan brusca, si queremos para todo le pondremos all */
 }
 
-.cover input[type = "button"]:hover{
-    box-shadow: 1px 1px 30px -5px #20202085;
+.cover input[type="button"]:hover {
+  box-shadow: 1px 1px 30px -5px #20202085;
 }
 
 /* PONEMOS EL VECTOR */
 
-.container__vector{
-    position: relative;
+.container__vector {
+  position: relative;
 }
 
-.container__vector img{
-    position: absolute;
-    bottom: 10px;
-    right: 0px;
-    width: 600px; /* disminuye el tamaño de la imagen */
-    /* Generamos la animación */
-    animation: move_vector 6s ease-in-out infinite; /* move_vector, es como nombramos a al aniación */
-    transition: all 300ms;
+.container__vector img {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 600px; /* disminuye el tamaño de la imagen */
+  /* Generamos la animación */
+  animation: move_vector 6s ease-in-out infinite; /* move_vector, es como nombramos a al aniación */
+  transition: all 300ms;
 }
 
 @keyframes move_vector {
-    0%{
-        transform: translatey(10px); /* translatey = movimiento en Y */
-    }
-    25%{
-        transform: translatey(-10px);
-    }
-    100%{
-        transform: translatey(10px);
-    }
+  0% {
+    transform: translatey(10px); /* translatey = movimiento en Y */
+  }
+  25% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(10px);
+  }
 }
 
-@media screen and (max-width: 920px){
-    .container__vector img{
-        width: 500px;
-    }
+@media screen and (max-width: 920px) {
+  .container__vector img {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 760px) {
+  .container__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .container__nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .btn__menu{
-        display: flex;
-    }
+  .btn__menu {
+    display: flex;
+  }
 
-    nav{
-        height: 100%;
-        background: #F1FAFF;
-        position: fixed;
-        top: 0;
-        right: -180px;
-        padding: 0 40px;
-        transition: all 300ms;
-    }
+  nav {
+    height: 100%;
+    background: #f1faff;
+    position: fixed;
+    top: 0;
+    right: -180px;
+    padding: 0 40px;
+    transition: all 300ms;
+  }
 
-    .move_nav{
-        right: 0px;
-    }
+  .move_nav {
+    right: 0px;
+  }
 
-    nav ul{
-        flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 
-    nav ul li{
-        margin: 20px 0px;
-    }
+  nav ul li {
+    margin: 20px 0px;
+  }
 
-    .container__vector img{
-        transform: scale(0);
-        animation: none;
-    }
+  .container__vector img {
+    transform: scale(0);
+    animation: none;
+  }
 }
 
 /* ESTILOS DEL FOOTER Y ESUQLETO DE LA APLICACIÓN */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
-    --color-esqueleto:#EFF3F5;
+:root {
+  --color-esqueleto: #eff3f5;
 }
 
-.container_article{
-    max-width: 1200px; /*Ancho del area de trabajo*/
-    padding: 0px 20px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.container_article {
+  max-width: 1200px; /*Ancho del area de trabajo*/
+  padding: 0px 20px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container_article .box_article{
-    width: 500px;
-    height: 400px;
-    background: var(--color-esqueleto);
-    margin: 15px;
-    border: solid;
-    border-width: 2PX;
-    border-radius: 10PX;
-    padding: 15PX;
+.container_article .box_article {
+  width: 500px;
+  height: 400px;
+  background: var(--color-esqueleto);
+  margin: 15px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 /*AQUI DEBAJO IRÁ EL FOORER*/
 
-footer{
-    width: 100%;
-    padding: 50px 0px;
-    font-family: 'Nunito', sans-serif;
-    background-image: url(../Images/background-footer.svg);
-    background-size: cover;
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  font-family: "Nunito", sans-serif;
+  background-image: url(../Images/background-footer.svg);
+  background-size: cover;
 
-    /* background-color: rgb(203, 203, 207); Por alguna estraña razon al abrirlo en Local no funciona
+  /* background-color: rgb(203, 203, 207); Por alguna estraña razon al abrirlo en Local no funciona
     -webkit-mask-image: url(../Images/background-footer.svg);
     mask-image: url(../Images/background-footer.svg);
     mask-size: cover; */
 }
 
-.container__footer{
-    display: flex; /*Poner las columnas una al lado de otras */
-    flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
-    justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+.container__footer {
+  display: flex; /*Poner las columnas una al lado de otras */
+  flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
+  justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.box__footer{
-    display: flex; /* Para que sus elemtos se pongan uno debajo del otro */
-    flex-direction: column;
-    padding: 33px;
+.box__footer {
+  display: flex; /* Para que sus elemtos se pongan uno debajo del otro */
+  flex-direction: column;
+  padding: 33px;
 }
 
-.box__footer .logo img{
-    width: 180px;
+.box__footer .logo img {
+  width: 180px;
 }
 
-.box__footer .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500px;
-    color: #7a7a7a;
-    font-size: 18px;
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500px;
+  color: #7a7a7a;
+  font-size: 18px;
 }
 
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700px;
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700px;
 }
 
-.box__footer h3{
-    font-size: 20px;
+.box__footer h3 {
+  font-size: 20px;
 }
 
-.box__footer a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-    font-size: 15px;
+.box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-.box__footer a:hover{
-    opacity: 0.8;
+.box__footer a:hover {
+  opacity: 0.8;
 }
 
-.box__footer a.fab{ /* Editar el estilo de los íconos */
-    font-size: 20px;
+.box__footer a.fab {
+  /* Editar el estilo de los íconos */
+  font-size: 20px;
 }
 
-.box__copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
 }
 
-.box__copyright p{
-    margin-top: 20px;
-    color: #7a7a7a;
+.box__copyright p {
+  margin-top: 20px;
+  color: #7a7a7a;
 }
 
-.box__copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
 }
 
 /* Estilos para los gráficos de resultados */
 #myImg {
-    transition: 0.3s;}
+  transition: 0.3s;
+}
 
 .zoom {
-    max-width: 550px;
-    border-radius: 10px;
-    padding: 15px;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 /* MAPA INTERACTIVO */
 .mapa {
-    max-width: 1200px; /*Ancho del area de trabajo*/
-    padding: 0px 20px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  max-width: 1200px; /*Ancho del area de trabajo*/
+  padding: 0px 20px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mapa_r {
-    border-radius: 15px;
-    border: solid;
-    border-width: 5px;
-    color: #3850A0;
+  border-radius: 15px;
+  border: solid;
+  border-width: 5px;
+  color: #3850a0;
 }
 
 /* Divisores */
-.container-info-descrpcion, 
-.container-info-descrpcion p, 
-.container-info-descrpcion li
-.contenido{
-    font-family: 'Poppins', sans-serif;
-    width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
+.container-info-descrpcion,
+.container-info-descrpcion p,
+.container-info-descrpcion li .contenido {
+  font-family: "Poppins", sans-serif;
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
 }
 
-.cuerpo:before{
-    content: '';
-    width: 1200px;
-    height:6px;
-    background: #EE9626;
-    position: absolute;
-    top: -15px;
-    left: 0;
+.cuerpo:before {
+  content: "";
+  width: 1200px;
+  height: 6px;
+  background: #ee9626;
+  position: absolute;
+  top: -15px;
+  left: 0;
 }
 
-.container-info-descrpcion h1{
-    color: #3850A0;
+.container-info-descrpcion h1 {
+  color: #3850a0;
 }
 
 /* Tarjetas */
-.tarjeta_contenido, .tarjeta_contenido p{
-    font-family: 'Poppins', sans-serif;
-    width: 1500px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
+.tarjeta_contenido,
+.tarjeta_contenido p {
+  font-family: "Poppins", sans-serif;
+  width: 1500px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
 }
 
 .tarjeta_contenido p:after {
-    content: '';
-    width: 180px;
-    height: 5px;
-    background: #EE9626;
-    position: absolute;
-    top: -15px;
-    left: 0;
+  content: "";
+  width: 180px;
+  height: 5px;
+  background: #ee9626;
+  position: absolute;
+  top: -15px;
+  left: 0;
 }
 
-.tarjeta_contenido h3{
-    color: #3850A0;
-    font-size: 15px;
+.tarjeta_contenido h3 {
+  color: #3850a0;
+  font-size: 15px;
 }
 
-.tarjeta_contenido p{
-    color: #575756;
-    font-size: 12px;
+.tarjeta_contenido p {
+  color: #575756;
+  font-size: 12px;
 }
 
-.container__tarjetas{
-    display: flex; /*Poner las columnas una al lado de otras */
-    flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
-    justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
-    *max-width: 1500px;
-    margin: auto;
-    margin-top: 100px;
+.container__tarjetas {
+  display: flex; /*Poner las columnas una al lado de otras */
+  flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
+  justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
+  *max-width: 1500px;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.tarjeta_contenido{
-    width: 180px;
+.tarjeta_contenido {
+  width: 180px;
 }
 
-.container__principal{
-    display: flex; /*Poner las columnas una al lado de otras */
-    flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
-    justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+.container__principal {
+  display: flex; /*Poner las columnas una al lado de otras */
+  flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
+  justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 /* Íconos de acceso */
-.container__acceso{
-    display: flex; /*Poner las columnas una al lado de otras */
-    flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
-    justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 20px;
+.container__acceso {
+  display: flex; /*Poner las columnas una al lado de otras */
+  flex-wrap: wrap; /*Se podran una debajo de la otra cuando se den cuebta que no caben en una sola línea */
+  justify-content: space-between; /* Para que mantengan una posición un tanto estirada y ocupen el ancho del proyecto */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
 }
 
-.icono{
-    width: 300px;
+.icono {
+  width: 300px;
+  padding: 5px;
+}
+
+.icono:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition-duration: 1s, 2s;
+}
+.icono {
+  overflow: hidden;
 }
