@@ -106,7 +106,7 @@ nav ul li a {
 }
 
 .select {
-  background-color: #3850a0;
+  background-color: #2c7fb8;
   padding: 10px 30px;
   color: white;
   border-radius: 20px;
@@ -161,24 +161,25 @@ nav ul li a {
 
 .cover .container__info {
   max-width: 400px;
-  margin-top: 40px;
+  margin-top: 20px;
   z-index: 2; /* para que simepre la imagen quede a nivel del texto asi se redusca el tamaño del esoacio */
   position: relative;
   margin-left: 12%;
 }
 
 .cover h1 {
-  max-width: 400px;
-  font-size: 60px;
-  font-weight: 900;
+  max-width: 900px;
+  font-size: 50px;
+  font-weight: 800;
   color: #ffffff;
+  line-height: 110%;
 }
 
 .cover h2 {
   font-size: 45px;
   font-weight: 800;
   color: #ee9626;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 .cover p {
@@ -188,7 +189,7 @@ nav ul li a {
 
 .cover input[type="button"] {
   padding: 10px 40px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 18px;
   font-weight: 600;
   border: none;
@@ -418,7 +419,7 @@ footer {
   border-radius: 15px;
   border: solid;
   border-width: 5px;
-  color: #3850a0;
+  color: #2c7fb8;
 }
 
 /* Divisores */
@@ -443,7 +444,7 @@ footer {
 }
 
 .container-info-descrpcion h1 {
-  color: #3850a0;
+  color: #2c7fb8;
 }
 
 /* Tarjetas */
@@ -467,7 +468,7 @@ footer {
 }
 
 .tarjeta_contenido h3 {
-  color: #3850a0;
+  color: #2c7fb8;
   font-size: 15px;
 }
 
