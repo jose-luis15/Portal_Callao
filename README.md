@@ -1,4 +1,4 @@
-# Geoportal de la Gerencia Regional de Desarrollo Social del Gobierno Regional del Callao :tw-1f476: :tw-1f475: :tw-1f467: :tw-1f46a: :tw-1f30e:
+# Geoportal de la Gerencia Regional de Desarrollo Social del Gobierno Regional del Callao 👶🏻👵🏻👩🏻👨‍👨‍👦‍👦💚💛💙
 
 ![](https://imgur.com/dwXWo2L.png)
 
@@ -6,7 +6,7 @@ El Geoportal web busca ser una herramienta que facilite el análisis de informac
 
 > El proyecto cuenta con mas de **90** capas georeferenciadas, con un detalle a nivel de **manzana** y reportes digitales de los principales indicadores.
 
-##En este portal web podrás encontrar:##
+## En este portal web podrás encontrar:
 
 - Datos demográficos
 - Vivienda
