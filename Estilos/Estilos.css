@@ -160,7 +160,7 @@ nav ul li a {
 }
 
 .cover .container__info {
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 40px;
   z-index: 2; /* para que simepre la imagen quede a nivel del texto asi se redusca el tamaño del esoacio */
   position: relative;
@@ -168,7 +168,7 @@ nav ul li a {
 }
 
 .cover h1 {
-  max-width: 400px;
+  max-width: 600px;
   font-size: 60px;
   font-weight: 900;
   color: #ffffff;
