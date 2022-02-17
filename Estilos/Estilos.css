@@ -103,7 +103,6 @@ nav ul {
   display: flex;
   justify-content: center; /* Para posicionar los elementos horizontalmente */
   align-items: center;
-  margin-right: 180px;
   background-color: #ffffff;
 }
 
