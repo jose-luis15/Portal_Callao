@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 .container__all {
@@ -42,7 +43,6 @@ html{
   margin: auto; /* mantiene centrado a los elementos */
   padding: 0px 20px;
   position: static;
-  
 }
 
 section[id]{
@@ -77,6 +77,16 @@ video {
   z-index: 99999;
 }
 
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 60px;
+  position: relative;
+}
+
 header .logo_header {
   height: 100%;
   display: flex;
@@ -85,7 +95,7 @@ header .logo_header {
 }
 
 .logo_header img {
-  width: 150px;
+  width: 160px;
 }
 
 .container__nav {
@@ -95,28 +105,39 @@ header .logo_header {
 }
 
 nav {
-  height: 100%;
+  background: #ffffff;
+  height: 40px;
+  width: 100%;
 }
 
 nav ul {
   height: 100%;
-  display: flex;
+  line-height: 60px;
   justify-content: center; /* Para posicionar los elementos horizontalmente */
   align-items: center;
+  margin: 10px;
+  float: right;
   background-color: #ffffff;
 }
 
 nav ul li {
-  margin: 0px 20px;
+  display: inline-block;
+  margin: 0px 15px;
+  line-height: 80px;
   list-style: none;
 }
 
 nav ul li a {
   color: #575756;
   font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  text transform: uppercase;
   font-weight: 600;
+  margin: 50px
   text-align: center;
 }
+
 
 nav ul li a:hover {
   background-color: #3850a0;
@@ -134,6 +155,28 @@ nav ul li a:hover {
   border-radius: 20px;
   font-weight: 500;
 }
+
+.checkbtn{
+  font-size: 30px;
+  color: #3850a0;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+section{
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh- 80px);
+}
+
+
 
 /* Creamos un estilo imaginario para poder animas la barra de menu al moder el scroll */
 .nav_mod {
@@ -254,30 +297,28 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 920px) {
-  .container__vector img {
-    width: 500px;
-  }
-}
 
-@media screen and (max-width: 760px) {
-  .container__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 1200px) {
+  
+  .checkbtn{
+    display: block;
   }
-
-  .btn__menu {
-    display: flex;
+  ul{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #7a7a7a;
+    top: 50px;
+    right: -100%;
+    transition: all .5s;
   }
-
+ 
   nav {
     height: 100%;
     background: #ffffff;
-    position: fixed;
     top: 0;
-    right: -180px;
-    padding: 0 40px;
+    left: -180px;
+    padding: 0 50px;
     transition: all 300ms;
   }
 
@@ -290,7 +331,21 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    margin: 20px 0px;
+    margin: 50px 0px;
+    line-height: 30px;
+    display: block;
+    margin-left: 30px;
+   
+  }
+  
+  #check:checked ~ ul{
+    right: 0%;    
+  }
+
+  #check:checked ~ li:hover{
+    right: 0%;
+    background-color: #3850a0;
+    color: white;
   }
 
   .container__vector img {
