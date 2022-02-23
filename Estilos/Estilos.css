@@ -167,7 +167,7 @@ nav ul li a:hover {
   display: none;
 }
 #check{
-  display: none;
+  display:block;
 }
 
 section{
