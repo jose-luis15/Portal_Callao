@@ -345,7 +345,7 @@ section{
 
   #check:checked ~ li:hover{
     right: 0%;
-    background-color: #3850a0;
+    background-color: #ffffff;
     color: white;
   }
 
