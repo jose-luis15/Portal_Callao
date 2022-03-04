@@ -29,11 +29,13 @@ header {
 
 html{
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 .move_content {
   right: 180px;
 }
+
 
 .container__header {
   max-width: 1200px;
